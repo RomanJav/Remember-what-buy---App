@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBaseBackground">
+
 
     <Button
             android:id="@+id/buyListBtn"
@@ -25,6 +27,24 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/buyListBtn"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:id="@+id/expressBuyListBtn"
+            android:hint="Express buy list"
+            style="@style/BtnStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/newBuyListBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/calc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            style="@style/BtnCalculatorStyle"
+            app:layout_constraintTop_toBottomOf="@+id/expressBuyListBtn"
             app:layout_constraintStart_toStartOf="parent"/>
 
 
